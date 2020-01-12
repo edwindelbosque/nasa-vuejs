@@ -26,27 +26,29 @@ section {
 }
 
 h2 {
-  color: white;
-  background: #043b92;
-  padding: 0px 6px;
+  color: #d5dadd;
+  background: #1a212c;
+  padding: 0px 10px;
+  padding-top: 3px;
   font-weight: 800;
   letter-spacing: 1px;
+  text-align: left;
 }
 
 div {
-  margin-top: 10px;
+  margin-top: 12px;
   width: 1000px;
   height: fit-content;
   display: flex;
   justify-content: center;
   align-content: flex-start;
-  padding-bottom: 2px;
-  background: rgb(221, 221, 221);
+  padding-bottom: 1px;
+  background: #334055;
 }
 
 img {
-  width: 996px;
+  width: 998px;
   height: auto;
-  margin-top: 2px;
+  margin-top: 1px;
 }
 </style>

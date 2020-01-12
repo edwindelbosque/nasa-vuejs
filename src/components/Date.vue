@@ -1,6 +1,6 @@
 <template>
   <div class="Date">
-    <h2>01 / 08 / 2020</h2>
+    <h4>01 / 08 / 2020</h4>
     <svg
       width="27px"
       height="30px"
@@ -41,8 +41,8 @@ export default {
 </script>
 
 <style scoped>
-h2 {
-  color: white;
+h4 {
+  color: rgb(235, 235, 235);
   margin-right: 15px;
 }
 
