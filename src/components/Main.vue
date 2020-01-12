@@ -1,34 +1,40 @@
 <template>
-  <div class="Main">
-    <Nav />
-    <h1>{{ msg }}</h1>
-    <PhotoHolder />
-  </div>
+	<div class="Main">
+		<Nav v-on:getDate="onClick" />
+		<PhotoHolder />
+	</div>
 </template>
 
 <script>
-import Nav from "./Nav";
-import PhotoHolder from "./PhotoHolder";
+import Nav from './Nav';
+import PhotoHolder from './PhotoHolder';
 
 export default {
-  name: "Main",
-  components: {
-    Nav,
-    PhotoHolder
-  },
-  props: {
-    msg: String
-  }
+	name: 'Main',
+	data() {
+		return {
+			date: ''
+		};
+	},
+	components: {
+		Nav,
+		PhotoHolder
+	},
+	methods: {
+		onClick(newDate) {
+			this.date = newDate;
+		}
+	}
 };
 </script>
 
 <style scoped>
 .Main {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  width: 1000px;
-  color: black;
-  padding-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	width: 1000px;
+	color: black;
+	padding-bottom: 100px;
 }
 </style>

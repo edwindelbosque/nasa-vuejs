@@ -1,40 +1,40 @@
 <template>
-  <div id="app">
-    <Main msg="Hello World" />
-  </div>
+	<div id="app">
+		<Main />
+	</div>
 </template>
 
 <script>
-import Main from "./components/Main";
+import Main from './components/Main';
 
 export default {
-  name: "app",
-  components: {
-    Main
-  }
+	name: 'app',
+	components: {
+		Main
+	}
 };
 </script>
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  background: black;
+	font-family: 'Avenir', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
+	background: black;
 }
 
 body {
-  background: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	background: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 </style>

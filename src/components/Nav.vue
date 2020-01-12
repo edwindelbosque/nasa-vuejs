@@ -4,7 +4,7 @@
 			<img alt="NASA logo" src="../assets/logo.png" class="logo" />
 			<h3>Photo of the day</h3>
 		</div>
-		<Date />
+		<Date v-on="$listeners" />
 	</nav>
 </template>
 
