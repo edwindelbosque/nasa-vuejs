@@ -15,6 +15,7 @@ export default {
       nasaData: ""
     };
   },
+  props: ["date"],
   created() {
     return fetch(
       "https://api.nasa.gov/planetary/apod?api_key=Ot4l5yvwK4E688azgJrDhttp46o2stPxLvfCfCQL"

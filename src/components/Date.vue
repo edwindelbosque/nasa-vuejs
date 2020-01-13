@@ -55,7 +55,7 @@ export default {
   },
   data() {
     return {
-      date: new Date(),
+      date: new Date().toString().slice(4, 15),
       newDate: null,
       months: [
         {
