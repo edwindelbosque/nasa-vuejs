@@ -13,7 +13,7 @@ export default {
 	name: 'Main',
 	data() {
 		return {
-			date: ''
+			date: null
 		};
 	},
 	components: {
