@@ -1,7 +1,7 @@
 <template>
   <div class="Main">
     <Nav v-on:getDate="onClick" />
-    <PhotoHolder />
+    <PhotoHolder v-bind:date="date" />
   </div>
 </template>
 
