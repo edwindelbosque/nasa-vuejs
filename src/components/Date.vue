@@ -111,12 +111,13 @@ export default {
   },
   watch: {
     date: function() {
-      this.$emit("getDate", this.date);
       const textMonth = this.date.toString().slice(4, 7);
       const day = this.date.toString().slice(8, 10);
       const year = this.date.toString().slice(11, 15);
       const month = this.months.find(month => month.text === textMonth).digit;
       this.newDate = `${year}-${month}-${day}`;
+      this.$emit("getDate", this.newDate);
+      this.date = this.date.toString().slice(4, 15);
     }
   }
 };
