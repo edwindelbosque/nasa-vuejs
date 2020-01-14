@@ -2,9 +2,7 @@
 	<section>
 		<h2>{{ nasaData.title }}</h2>
 		<a v-bind:href="nasaData.hdurl" target="_blank">
-			<div class="image-holder">
-				<img v-bind:alt="nasaData.title" v-bind:src="nasaData.url" />
-			</div>
+			<img v-bind:alt="nasaData.title" v-bind:src="nasaData.url" />
 		</a>
 		<div class="quote-block">
 			<p>{{ nasaData.explanation }}</p>
@@ -56,16 +54,17 @@ export default {
 
 <style scoped>
 section {
-	margin-top: 122px;
+	margin-top: 100px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
+	min-height: 70vh;
 }
 
 h2 {
 	color: #e4eaec;
-	background: #1a212c;
+	background: #1f1f1f;
 	padding: 10px 25px;
 	font-weight: 800;
 	letter-spacing: 1px;
@@ -74,19 +73,10 @@ h2 {
 	margin-bottom: 12px;
 }
 
-.image-holder {
-	width: 1000px;
-	height: fit-content;
-	display: flex;
-	justify-content: center;
-	align-content: flex-start;
-	padding-bottom: 1px;
-	background: #334055;
-}
-
 img {
 	width: 998px;
 	height: auto;
+	border: 1px solid #1f1f1f;
 	margin-top: 1px;
 }
 
@@ -108,7 +98,7 @@ p {
 	margin-top: 12px;
 	width: 1000px;
 	color: rgb(217, 223, 226);
-	background: #1a212c;
+	background: #1f1f1f;
 	padding: 30px 50px;
 	text-align: left;
 	cursor: default;

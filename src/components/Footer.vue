@@ -20,13 +20,13 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-top: 1px solid #4f90ff;
+	background: rgb(17, 15, 15);
 	margin-top: 100px;
 	width: 100vw;
 }
 
 h4 {
-	color: #4f90ff;
+	color: #dfdfdf;
 	font-size: 13px;
 	font-weight: 400;
 }
