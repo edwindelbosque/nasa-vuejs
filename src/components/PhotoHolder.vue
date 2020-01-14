@@ -56,7 +56,7 @@ export default {
 
 <style scoped>
 section {
-	margin-top: 24px;
+	margin-top: 122px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
