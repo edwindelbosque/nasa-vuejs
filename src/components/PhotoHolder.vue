@@ -8,7 +8,7 @@
 		</a>
 		<div class="quote-block">
 			<p>{{ nasaData.explanation }}</p>
-			<h6>Copyright © {{ nasaData.copyright }}</h6>
+			<h6>{{ displayCopyright() }}</h6>
 		</div>
 	</section>
 </template>
@@ -28,6 +28,15 @@ export default {
 		)
 			.then(data => data.json())
 			.then(data => (this.nasaData = data));
+	},
+	methods: {
+		displayCopyright() {
+			if (this.nasaData.copyright) {
+				return `Copyright © ${this.nasaData.copyright}`;
+			} else {
+				return '';
+			}
+		}
 	},
 	watch: {
 		date: {
