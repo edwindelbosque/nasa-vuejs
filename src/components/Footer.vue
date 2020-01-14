@@ -22,6 +22,7 @@ footer {
 	justify-content: center;
 	border-top: 1px solid #4f90ff;
 	margin-top: 100px;
+	width: 100vw;
 }
 
 h4 {

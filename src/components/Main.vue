@@ -1,7 +1,9 @@
 <template>
-	<div class="Main">
+	<div class="newMain">
 		<Nav v-on:getDate="onClick" />
-		<PhotoHolder v-bind:date="date" />
+		<div class="Main">
+			<PhotoHolder v-bind:date="date" />
+		</div>
 		<Footer />
 	</div>
 </template>
@@ -32,11 +34,18 @@ export default {
 </script>
 
 <style scoped>
-.Main {
+.newMain {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
-	width: 1000px;
 	color: black;
+	justify-content: center;
+	justify-items: center;
+	width: 100vw;
+}
+.Main {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }
 </style>
