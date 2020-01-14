@@ -2,7 +2,9 @@
 	<nav>
 		<section>
 			<div>
-				<img alt="NASA logo" src="../assets/logo.png" class="logo" />
+				<a href="https://www.nasa.gov/">
+					<img alt="NASA logo" src="../assets/logo.png" class="logo" />
+				</a>
 				<h3>Photo of the day</h3>
 			</div>
 			<Date v-on="$listeners" />
@@ -23,21 +25,21 @@ export default {
 
 <style scoped>
 nav {
-	margin-top: 0px;
+	padding-top: 25px;
 	display: flex;
 	position: absolute;
-	top: 20px;
-	height: 76px;
+	top: 0px;
+	height: 70px;
 	right: 0;
 	left: 0;
 	justify-content: center;
-	border-bottom: 1px solid #4f90ff;
+	border-bottom: 1px solid #043b92;
+	background: rgb(17, 15, 15);
 	padding-bottom: 20px;
 }
 
 section {
 	justify-content: space-between;
-	padding: 0px 5px;
 	display: flex;
 	width: 1000px;
 }
@@ -47,18 +49,28 @@ div {
 	align-items: center;
 }
 
+a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 45px;
+	width: 45px;
+	border-radius: 30px;
+	margin-bottom: 3px;
+}
+
 .logo {
-	width: 90px;
+	width: 60px;
+	padding-bottom: 0px;
 	height: auto;
 }
 
 h3 {
-	color: white;
+	color: rgb(223, 223, 223);
 	margin-left: 10px;
 	font-size: 20px;
+	margin-bottom: 3px;
 	cursor: default;
-	background: -webkit-linear-gradient(top right, #69a0ff, #468aff);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	font-weight: 400;
 }
 </style>
