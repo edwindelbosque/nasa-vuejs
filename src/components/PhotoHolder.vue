@@ -56,7 +56,7 @@ export default {
 
 <style scoped>
 section {
-	margin-top: 60px;
+	margin-top: 24px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -66,7 +66,7 @@ section {
 h2 {
 	color: #e4eaec;
 	background: #1a212c;
-	padding: 10px 20px;
+	padding: 10px 25px;
 	font-weight: 800;
 	letter-spacing: 1px;
 	text-align: left;

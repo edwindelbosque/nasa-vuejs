@@ -162,14 +162,13 @@ export default {
 <style scoped>
 h4 {
 	color: rgb(235, 235, 235);
-	margin-right: 15px;
+	margin-right: 12px;
 	cursor: default;
 }
 
 button {
 	background: #093172;
 	border: none;
-	/* padding: 4px 10px; */
 	width: 40px;
 	height: 42px;
 	margin-bottom: 6px;

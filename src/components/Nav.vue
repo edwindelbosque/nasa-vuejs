@@ -25,6 +25,9 @@ nav {
 	display: flex;
 	width: 1000px;
 	justify-content: space-between;
+	padding: 0px 5px;
+	border-bottom: 1px solid #4f90ff;
+	padding-bottom: 20px;
 }
 
 div {
