@@ -1,9 +1,11 @@
 <template>
 	<section>
 		<h2>{{ nasaData.title }}</h2>
-		<div class="image-holder">
-			<img alt="Photo of the day by NASA." v-bind:src="nasaData.url" />
-		</div>
+		<a v-bind:href="nasaData.hdurl" target="_blank">
+			<div class="image-holder">
+				<img v-bind:alt="nasaData.title" v-bind:src="nasaData.url" />
+			</div>
+		</a>
 		<div class="quote-block">
 			<p>{{ nasaData.explanation }}</p>
 			<h6>Copyright © {{ nasaData.copyright }}</h6>
@@ -60,10 +62,10 @@ h2 {
 	letter-spacing: 1px;
 	text-align: left;
 	cursor: default;
+	margin-bottom: 12px;
 }
 
 .image-holder {
-	margin-top: 12px;
 	width: 1000px;
 	height: fit-content;
 	display: flex;
