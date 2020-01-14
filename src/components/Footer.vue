@@ -22,6 +22,7 @@ footer {
 	justify-content: center;
 	background: rgb(17, 15, 15);
 	margin-top: 100px;
+	border-top: 1px solid #1f1f1f;
 	width: 100vw;
 }
 

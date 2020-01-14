@@ -33,7 +33,7 @@ nav {
 	right: 0;
 	left: 0;
 	justify-content: center;
-	border-bottom: 1px solid #043b92;
+	border-bottom: 1px solid #1f1f1f;
 	background: rgb(17, 15, 15);
 	padding-bottom: 20px;
 }
