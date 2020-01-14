@@ -1,8 +1,12 @@
 <template>
 	<section>
 		<h2>{{ nasaData.title }}</h2>
-		<div>
+		<div class="image-holder">
 			<img alt="Photo of the day by NASA." v-bind:src="nasaData.url" />
+		</div>
+		<div class="quote-block">
+			<p>{{ nasaData.explanation }}</p>
+			<h6>Copyright © {{ nasaData.copyright }}</h6>
 		</div>
 	</section>
 </template>
@@ -49,17 +53,16 @@ section {
 }
 
 h2 {
-	color: #d5dadd;
+	color: #e4eaec;
 	background: #1a212c;
-	padding: 0px 10px;
-	padding-top: 3px;
+	padding: 10px 20px;
 	font-weight: 800;
 	letter-spacing: 1px;
 	text-align: left;
 	cursor: default;
 }
 
-div {
+.image-holder {
 	margin-top: 12px;
 	width: 1000px;
 	height: fit-content;
@@ -74,5 +77,29 @@ img {
 	width: 998px;
 	height: auto;
 	margin-top: 1px;
+}
+
+h6 {
+	margin-top: 12px;
+	color: rgb(146, 146, 146);
+	font-weight: 300;
+	text-align: right;
+	cursor: default;
+}
+
+.quote-block {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+p {
+	margin-top: 12px;
+	width: 1000px;
+	color: rgb(217, 223, 226);
+	background: #1a212c;
+	padding: 30px 50px;
+	text-align: left;
+	cursor: default;
 }
 </style>
