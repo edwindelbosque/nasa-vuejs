@@ -1,5 +1,5 @@
 # NASA: Photo of the day
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3c7d3faa-26b7-4978-8b37-12d13afb1f9c/deploy-status)](https://app.netlify.com/sites/nasa-potd/deploys)
 ## Summary
 
 A Vue.js web app where you can see NASA's photo of the day or check the photo of the day of any day you want!
@@ -17,12 +17,15 @@ A Vue.js web app where you can see NASA's photo of the day or check the photo of
 - Using Vue.js for the first time.
 - Working with 3rd-party RESTful API from NASA.
 - Implementing 3rd-party calendar package from v-calendar.
+- Deployment to Netlify
 
 ## Built with
 
 - Vue.js
 - NASA Photo of the day RESTful API
 - v-calendar package
+- Netlify
+- Continuous Deployment (CD) with Netlify
 
 ## How to install into your computer
 
