@@ -2,7 +2,14 @@
 	<section>
 		<h2>{{ nasaData.title }}</h2>
 		<a v-bind:href="nasaData.hdurl" target="_blank">
-			<img v-bind:alt="nasaData.title" v-bind:src="nasaData.url" />
+			<vue-load-image>
+				<img
+					v-bind:src="nasaData.url"
+					slot="image"
+					v-bind:alt="nasaData.title"
+				/>
+				<img slot="preloader" src="../assets/loader.gif" />
+			</vue-load-image>
 		</a>
 		<div class="quote-block">
 			<p>{{ nasaData.explanation }}</p>
@@ -12,6 +19,8 @@
 </template>
 
 <script>
+import VueLoadImage from 'vue-load-image';
+
 export default {
 	name: 'PhotoHolder',
 	data() {
@@ -20,6 +29,9 @@ export default {
 		};
 	},
 	props: ['date'],
+	components: {
+		'vue-load-image': VueLoadImage
+	},
 	created() {
 		return fetch(
 			'https://api.nasa.gov/planetary/apod?api_key=Ot4l5yvwK4E688azgJrDhttp46o2stPxLvfCfCQL'
